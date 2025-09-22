@@ -29,7 +29,7 @@ class Container(tk.Frame):
         self.show_frames(Inventario)
         
     
-    def widgets(self):
+    def widgets(self): #En esta función se realiza toda la parte gráfica del sistema
         frame1 = tk.Frame(self, bg="#C6D9E3")
         frame1.pack()
         frame1.place(x=0, y=0, width=800, height=400)
@@ -45,6 +45,9 @@ class Container(tk.Frame):
         self.logo_image = ImageTk.PhotoImage(self.logo_image)
         self.logo_label = tk.Label(frame1, image=self.logo_image, bg="#C6D9E3")
         self.logo_label.place(x=100, y=30)
+        
+        copyright_label = tk.Label(frame1, text="© 2025 Rodrigo Sida. Todos los derechos reservados", font="sans 12 bold", bg="#C6D9E3", fg="red")
+        copyright_label.place(x=180, y=350)
         
     
         
